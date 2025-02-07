@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Responsiveness -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- End of Responsiveness -->
+        <!-- CSS Import -->
+        <link rel="stylesheet" href="style.css">
+        <!-- End of CSS Import -->
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <!-- End of Fonts -->
+    </head>
+    <body>
+        <!-- App Wrapper -->
+        <main class="app">
+            <!-- Greeting -->
+            <section class="greeting">
+                <h2 class="title">
+                    Hello, <input type="text" id="name" placeholder="Name Here" />
+                </h2>
+            </section>
+            <!-- End of Greeting -->
+            <!-- New Item -->
+            <section class="create">
+                <h3>ADD TO LIST</h3>
+                <form id="new-item-form">
+                    <h4>Enter the title</h4>
+                    <input type="text" name="content" id="content" placeholder="e.g. Five Feet Apart" />
+                    <h4>Pick a category</h4>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="category" id="category1" value="movie" />
+                            <span class="bubble movie"></span>
+                            <div>Movie</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="category" id="category2" value="book" />
+                            <span class="bubble book"></span>
+                            <div>Book</div>
+                        </label>
+                    </div>
+                    <input type="submit" value="ADD" />
+                </form>
+            </section>
+            <!-- End of New Item -->
+            <!-- List of Items -->
+            <section class="items-list">
+                <h3>MOVIES/BOOKS LIST</h3>
+                <div class="list" id="items-list"></div>
+            </section>
+            <!-- End of List -->
+        </main>
+        <!-- End of App Wrapper -->
+        <!-- JS Import -->
+        <script src="script.js"></script>
+        <!-- End of JS Import -->
+    </body>
+</html>
